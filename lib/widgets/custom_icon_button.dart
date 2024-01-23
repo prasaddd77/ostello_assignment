@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ostello_assignment/theme_helper.dart';
+
+import '../utils/theme_helper.dart';
 
 class CustomIconButton extends StatelessWidget {
   CustomIconButton({
