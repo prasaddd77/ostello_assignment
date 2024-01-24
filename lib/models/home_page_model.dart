@@ -6,18 +6,24 @@ import '../utils/image_constants.dart';
 class HomePageModel {
   List<ExploreuniversitiesItemModel> exploreuniversitiesItemList = [
     ExploreuniversitiesItemModel(
+        height: 100,
+        width: 109,
         image: ImageConstant.imgEllipse215,
         exploreText: "Explore Universities",
         descriptionText:
             "Explore 2000+ foreign universities effortlessly with convenient filtering and sorting.",
         exploreImage: ImageConstant.imgImage13),
     ExploreuniversitiesItemModel(
+        height: 108,
+        width: 108,
         image: ImageConstant.imgEllipse215123x128,
         exploreText: "Test Preparation",
         descriptionText:
             "Tailor your GRE prep with live classes, mock tests, practice questions, and more.",
         exploreImage: ImageConstant.imgExamHd),
     ExploreuniversitiesItemModel(
+      height: 126,
+      width: 126,
       image: ImageConstant.imgEllipse215,
       exploreText: "College Matchmaker",
       descriptionText:
@@ -25,6 +31,8 @@ class HomePageModel {
       exploreImage: ImageConstant.imgFloatingQuestion,
     ),
     ExploreuniversitiesItemModel(
+        height: 87,
+        width: 133,
         image: ImageConstant.imgEllipse215,
         exploreImage: ImageConstant.imgBooksGraduation,
         exploreText: "Scholarship",

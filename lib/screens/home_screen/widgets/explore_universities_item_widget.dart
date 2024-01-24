@@ -7,7 +7,6 @@ import '../../../widgets/custom_image_view.dart';
 import '../../../models/explore_universities_item_model.dart';
 import '../../../utils/image_constants.dart';
 
-
 // ignore: must_be_immutable
 class ExploreuniversitiesItemWidget extends StatelessWidget {
   ExploreuniversitiesItemWidget(
@@ -32,8 +31,18 @@ class ExploreuniversitiesItemWidget extends StatelessWidget {
       child: Container(
         height: 127,
         width: 311,
-        decoration: AppDecoration.fillGray.copyWith(
+        decoration: BoxDecoration(
           borderRadius: BorderRadiusStyle.roundedBorder15,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+            ),
+            const BoxShadow(
+              color: Color(0XFFF6EFFE),
+              spreadRadius: -1,
+              blurRadius: 1.0,
+            ),
+          ],
         ),
         child: Stack(
           alignment: Alignment.centerLeft,
@@ -41,15 +50,9 @@ class ExploreuniversitiesItemWidget extends StatelessWidget {
             Align(
               alignment: Alignment.topRight,
               child: Container(
-                height: 72,
-                width: 87,
-                decoration: BoxDecoration(
-                  color: appTheme.purple50,
-                  borderRadius: BorderRadius.circular(
-                    43,
-                  ),
-                ),
-              ),
+                  height: 72,
+                  width: 87,
+                  child: CustomImageView(imagePath: ImageConstant.ellipsis214)),
             ),
             CustomImageView(
               imagePath: exploreuniversitiesItemModelObj.image,
@@ -95,14 +98,14 @@ class ExploreuniversitiesItemWidget extends StatelessWidget {
                         CustomImageView(
                           imagePath:
                               exploreuniversitiesItemModelObj?.exploreImage,
-                          height: 100,
-                          width: 109,
+                          height: exploreuniversitiesItemModelObj.height,
+                          width: exploreuniversitiesItemModelObj.width,
                           alignment: Alignment.topLeft,
                         ),
                         CustomIconButton(
                           height: 28,
                           width: 28,
-                          padding: EdgeInsets.all(5),
+                          padding: const EdgeInsets.all(5),
                           alignment: Alignment.bottomRight,
                           child: CustomImageView(
                             imagePath: ImageConstant.arrowRight,

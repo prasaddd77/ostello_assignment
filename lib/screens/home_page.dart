@@ -100,125 +100,125 @@ class HomePage extends StatelessWidget {
               const SizedBox(
                 height: 5,
               ),
-              Align(
-                alignment: Alignment.topCenter,
-                child: Card(
-                  clipBehavior: Clip.antiAlias,
-                  elevation: 0,
-                  margin: EdgeInsets.only(top: 14),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(9)),
-                  child: Container(
-                    height: 212,
-                    width: double.maxFinite,
-                    decoration:
-                        AppDecoration.gradientDeepPurpleAToPurple.copyWith(
-                      borderRadius: BorderRadius.circular(9),
-                    ),
-                    child: Stack(
-                      alignment: Alignment.centerLeft,
-                      children: [
-                        // ShaderMask(
-                        //   shaderCallback: (Rect bounds) {
-                        //     return const LinearGradient(colors: [
-                        //       Color(0XFF7D24E0),
-                        //       Color(0XFF20136E),
-                        //       Color(0XFF8D2292),
-                        //     ]).createShader(bounds);
-                        //   },
-                        //   child: Container(
-                        //     decoration: BoxDecoration(
-                        //       borderRadius: BorderRadius.circular(9),
-                        //     ),
-                        //   ),
-                        // ),
-                        // CustomImageView(
-                        //   imagePath: "assets/images/img_image_15.png",
-                        //   height: 211,
-                        //   width: 360,
-                        //   alignment: Alignment.center,
-                        // ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10.0, top: 54),
-                          child: Column(
-                            children: [
-                              const Text(
-                                'Discover Your Ideal Program',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontFamily: 'Avenir',
-                                  fontWeight: FontWeight.w800,
-                                  height: 0,
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 7,
-                              ),
-                              const Text(
-                                'Join the ideal program that matches\n your goals in your dream location.',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12,
-                                  fontFamily: 'Avenir',
-                                  fontWeight: FontWeight.w400,
-                                  //height: 0.10,
-                                  //letterSpacing: 0.12,
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 15,
-                              ),
-                              ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                  fixedSize: Size(170, 28),
-                                  backgroundColor: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(14),
-                                  ),
-                                ),
-                                onPressed: () {},
-                                child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
-                                    children: [
-                                      Container(
-                                        //margin: const EdgeInsets.only(right: 3),
-                                        child: CustomImageView(
-                                            imagePath:
-                                                "assets/images/img_image_27.png",
-                                            width: 22,
-                                            height: 22),
-                                      ),
-                                      const Text(
-                                        'Start Your Journey',
-                                        style: TextStyle(
-                                          color: Color(0xFF161B1F),
-                                          fontSize: 11.11,
-                                          fontFamily: 'Avenir',
-                                          fontWeight: FontWeight.w400,
-                                          height: 0.11,
-                                          letterSpacing: 0.01,
-                                        ),
-                                      )
-                                    ]),
-                              )
-                            ],
-                          ),
-                        ),
-                        CustomImageView(
-                          imagePath: "assets/images/img_group_1410101637.png",
-                          height: 255,
-                          width: 144,
-                          alignment: Alignment.centerRight,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                height: 15,
+              // Align(
+              //   alignment: Alignment.topCenter,
+              //   child: Card(
+              //     clipBehavior: Clip.antiAlias,
+              //     elevation: 0,
+              //     margin: EdgeInsets.only(top: 14),
+              //     shape: RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.circular(9)),
+              //     child: Container(
+              //       height: 212,
+              //       width: double.maxFinite,
+              //       decoration:
+              //           AppDecoration.gradientDeepPurpleAToPurple.copyWith(
+              //         borderRadius: BorderRadius.circular(9),
+              //       ),
+              //       child: Stack(
+              //         alignment: Alignment.centerLeft,
+              //         children: [
+              //           // ShaderMask(
+              //           //   shaderCallback: (Rect bounds) {
+              //           //     return const LinearGradient(colors: [
+              //           //       Color(0XFF7D24E0),
+              //           //       Color(0XFF20136E),
+              //           //       Color(0XFF8D2292),
+              //           //     ]).createShader(bounds);
+              //           //   },
+              //           //   child: Container(
+              //           //     decoration: BoxDecoration(
+              //           //       borderRadius: BorderRadius.circular(9),
+              //           //     ),
+              //           //   ),
+              //           // ),
+              //           // CustomImageView(
+              //           //   imagePath: "assets/images/img_image_15.png",
+              //           //   height: 211,
+              //           //   width: 360,
+              //           //   alignment: Alignment.center,
+              //           // ),
+              //           Padding(
+              //             padding: const EdgeInsets.only(left: 10.0, top: 54),
+              //             child: Column(
+              //               children: [
+              //                 const Text(
+              //                   'Discover Your Ideal Program',
+              //                   style: TextStyle(
+              //                     color: Colors.white,
+              //                     fontSize: 16,
+              //                     fontFamily: 'Avenir',
+              //                     fontWeight: FontWeight.w800,
+              //                     height: 0,
+              //                   ),
+              //                 ),
+              //                 const SizedBox(
+              //                   height: 7,
+              //                 ),
+              //                 const Text(
+              //                   'Join the ideal program that matches\n your goals in your dream location.',
+              //                   style: TextStyle(
+              //                     color: Colors.white,
+              //                     fontSize: 12,
+              //                     fontFamily: 'Avenir',
+              //                     fontWeight: FontWeight.w400,
+              //                     //height: 0.10,
+              //                     //letterSpacing: 0.12,
+              //                   ),
+              //                 ),
+              //                 const SizedBox(
+              //                   height: 15,
+              //                 ),
+              //                 ElevatedButton(
+              //                   style: ElevatedButton.styleFrom(
+              //                     fixedSize: Size(170, 28),
+              //                     backgroundColor: Colors.white,
+              //                     shape: RoundedRectangleBorder(
+              //                       borderRadius: BorderRadius.circular(14),
+              //                     ),
+              //                   ),
+              //                   onPressed: () {},
+              //                   child: Row(
+              //                       mainAxisAlignment:
+              //                           MainAxisAlignment.spaceEvenly,
+              //                       children: [
+              //                         Container(
+              //                           //margin: const EdgeInsets.only(right: 3),
+              //                           child: CustomImageView(
+              //                               imagePath:
+              //                                   "assets/images/img_image_27.png",
+              //                               width: 22,
+              //                               height: 22),
+              //                         ),
+              //                         const Text(
+              //                           'Start Your Journey',
+              //                           style: TextStyle(
+              //                             color: Color(0xFF161B1F),
+              //                             fontSize: 11.11,
+              //                             fontFamily: 'Avenir',
+              //                             fontWeight: FontWeight.w400,
+              //                             height: 0.11,
+              //                             letterSpacing: 0.01,
+              //                           ),
+              //                         )
+              //                       ]),
+              //                 )
+              //               ],
+              //             ),
+              //           ),
+              //           CustomImageView(
+              //             imagePath: "assets/images/img_group_1410101637.png",
+              //             height: 255,
+              //             width: 144,
+              //             alignment: Alignment.centerRight,
+              //           ),
+              //         ],
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              CustomImageView(
+                imagePath: ImageConstant.start,
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -230,11 +230,11 @@ class HomePage extends StatelessWidget {
                       Container(
                         height: 33,
                         width: 100,
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 5,
                           vertical: 8,
                         ),
-                        decoration: BoxDecoration(color: Color(0XFFF6EFFE))
+                        decoration: const BoxDecoration(color: Color(0XFFF6EFFE))
                             .copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
                           imagePath: 'assets/images/img_image_20.png',
@@ -249,11 +249,11 @@ class HomePage extends StatelessWidget {
                       Container(
                         height: 33,
                         width: 100,
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 5,
                           vertical: 8,
                         ),
-                        decoration: BoxDecoration(color: Color(0XFFF6EFFE))
+                        decoration: const BoxDecoration(color: Color(0XFFF6EFFE))
                             .copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
                           imagePath: 'assets/images/img_image_18.png',
@@ -268,11 +268,11 @@ class HomePage extends StatelessWidget {
                       Container(
                         height: 33,
                         width: 92,
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 12,
                           vertical: 8,
                         ),
-                        decoration: BoxDecoration(color: Color(0XFFF6EFFE))
+                        decoration: const BoxDecoration(color: Color(0XFFF6EFFE))
                             .copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
                           imagePath: 'assets/images/img_image_23.png',
@@ -287,11 +287,11 @@ class HomePage extends StatelessWidget {
                       Container(
                         height: 33,
                         width: 92,
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 12,
                           vertical: 8,
                         ),
-                        decoration: BoxDecoration(color: Color(0XFFF6EFFE))
+                        decoration: const BoxDecoration(color: Color(0XFFF6EFFE))
                             .copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
                           imagePath: 'assets/images/img_image_22.png',
@@ -529,9 +529,11 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 11),
+                  const SizedBox(height: 11),
                   Container(
-                    padding: EdgeInsets.symmetric(
+                    width: double.infinity,
+                    height: 35,
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 155,
                       vertical: 2,
                     ),

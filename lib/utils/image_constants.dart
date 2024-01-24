@@ -57,4 +57,8 @@ class ImageConstant {
   static String collegeFinder = '$imagePath/college_finder.png';
 
   static String arrowRight = '$imagePath/arrow-right.svg';
+
+  static String ellipsis214 = '$imagePath/Ellipse 214.png';
+
+  static String start = '$imagePath/Frame 1410102072.png';
 }

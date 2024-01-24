@@ -1,13 +1,14 @@
 import '../utils/image_constants.dart';
 
 class ExploreuniversitiesItemModel {
-  ExploreuniversitiesItemModel({
-    this.image,
-    this.exploreText,
-    this.descriptionText,
-    this.exploreImage,
-    this.id,
-  }) {
+  ExploreuniversitiesItemModel(
+      {this.image,
+      this.exploreText,
+      this.descriptionText,
+      this.exploreImage,
+      this.id,
+      required this.height,
+      required this.width}) {
     image = image ?? ImageConstant.imgEllipse215;
     exploreText = exploreText ?? "Explore Universities";
     descriptionText = descriptionText ??
@@ -25,4 +26,8 @@ class ExploreuniversitiesItemModel {
   String? exploreImage;
 
   String? id;
+
+  double height;
+
+  double width;
 }
