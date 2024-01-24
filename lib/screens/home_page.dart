@@ -223,7 +223,7 @@ class HomePage extends StatelessWidget {
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 15.0),
+                  padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -234,10 +234,11 @@ class HomePage extends StatelessWidget {
                           horizontal: 5,
                           vertical: 8,
                         ),
-                        decoration: const BoxDecoration(color: Color(0XFFF6EFFE))
+                        decoration: const BoxDecoration(
+                                color: Color(0XFFF6EFFE))
                             .copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
-                          imagePath: 'assets/images/img_image_20.png',
+                          imagePath: ImageConstant.imgImage20,
                           height: 17,
                           width: 89,
                           alignment: Alignment.center,
@@ -253,10 +254,11 @@ class HomePage extends StatelessWidget {
                           horizontal: 5,
                           vertical: 8,
                         ),
-                        decoration: const BoxDecoration(color: Color(0XFFF6EFFE))
+                        decoration: const BoxDecoration(
+                                color: Color(0XFFF6EFFE))
                             .copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
-                          imagePath: 'assets/images/img_image_18.png',
+                          imagePath: ImageConstant.imgImage18,
                           height: 17,
                           width: 46,
                           alignment: Alignment.center,
@@ -267,15 +269,16 @@ class HomePage extends StatelessWidget {
                       ),
                       Container(
                         height: 33,
-                        width: 92,
+                        width: 100,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 12,
                           vertical: 8,
                         ),
-                        decoration: const BoxDecoration(color: Color(0XFFF6EFFE))
+                        decoration: const BoxDecoration(
+                                color: Color(0XFFF6EFFE))
                             .copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
-                          imagePath: 'assets/images/img_image_23.png',
+                          imagePath: ImageConstant.imgImage23,
                           height: 17,
                           width: 58,
                           alignment: Alignment.centerRight,
@@ -286,15 +289,16 @@ class HomePage extends StatelessWidget {
                       ),
                       Container(
                         height: 33,
-                        width: 92,
+                        width: 100,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 12,
                           vertical: 8,
                         ),
-                        decoration: const BoxDecoration(color: Color(0XFFF6EFFE))
+                        decoration: const BoxDecoration(
+                                color: Color(0XFFF6EFFE))
                             .copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
-                          imagePath: 'assets/images/img_image_22.png',
+                          imagePath: ImageConstant.imgImage22,
                           height: 17,
                           width: 72,
                           alignment: Alignment.centerRight,
@@ -361,34 +365,32 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _buildExploreUniversities(BuildContext context) {
-    return Flexible(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
-        child: Consumer<HomePageProvider>(
-          builder: (context, provider, child) {
-            return ListView.separated(
-              //physics: NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              separatorBuilder: (
-                context,
-                index,
-              ) {
-                return SizedBox(
-                  height: 28,
-                );
-              },
-              itemCount:
-                  provider.homePageModelObj.exploreuniversitiesItemList.length,
-              itemBuilder: (context, index) {
-                ExploreuniversitiesItemModel model = provider
-                    .homePageModelObj.exploreuniversitiesItemList[index];
-                return ExploreuniversitiesItemWidget(
-                  model,
-                );
-              },
-            );
-          },
-        ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: Consumer<HomePageProvider>(
+        builder: (context, provider, child) {
+          return ListView.separated(
+            physics: NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            separatorBuilder: (
+              context,
+              index,
+            ) {
+              return SizedBox(
+                height: 28,
+              );
+            },
+            itemCount:
+                provider.homePageModelObj.exploreuniversitiesItemList.length,
+            itemBuilder: (context, index) {
+              ExploreuniversitiesItemModel model =
+                  provider.homePageModelObj.exploreuniversitiesItemList[index];
+              return ExploreuniversitiesItemWidget(
+                model,
+              );
+            },
+          );
+        },
       ),
     );
   }

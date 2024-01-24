@@ -93,7 +93,7 @@ class ExploreuniversitiesItemWidget extends StatelessWidget {
                     width: 135,
                     margin: EdgeInsets.only(left: 4),
                     child: Stack(
-                      alignment: Alignment.bottomRight,
+                      alignment: Alignment.centerLeft,
                       children: [
                         CustomImageView(
                           imagePath:
@@ -103,6 +103,7 @@ class ExploreuniversitiesItemWidget extends StatelessWidget {
                           alignment: Alignment.topLeft,
                         ),
                         CustomIconButton(
+                          onTap: () {},
                           height: 28,
                           width: 28,
                           padding: const EdgeInsets.all(5),

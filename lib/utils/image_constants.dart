@@ -20,6 +20,8 @@ class ImageConstant {
 
   static String imgImage23 = '$imagePath/img_image_23.png';
 
+  static String imgImage22 = '$imagePath/img_image_22.png';
+
   static String imgGroup1000003556 = '$imagePath/img_group_1000003556.svg';
 
   static String imgEllipse215 = '$imagePath/img_ellipse_215.png';
