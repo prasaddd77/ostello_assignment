@@ -219,6 +219,7 @@ class HomePage extends StatelessWidget {
               // ),
               CustomImageView(
                 imagePath: ImageConstant.start,
+                radius: BorderRadius.all(Radius.circular(15)),
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -234,9 +235,22 @@ class HomePage extends StatelessWidget {
                           horizontal: 5,
                           vertical: 8,
                         ),
-                        decoration: const BoxDecoration(
-                                color: Color(0XFFF6EFFE))
-                            .copyWith(borderRadius: BorderRadius.circular(6)),
+                        clipBehavior: Clip.none,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadiusStyle.roundedBorder6,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                            ),
+                            const BoxShadow(
+                              color: Color(0XFFF6EFFE),
+                              spreadRadius: -1,
+                              blurRadius: 1.0,
+                            ),
+                          ],
+                        ).copyWith(
+                          borderRadius: BorderRadius.circular(6),
+                        ),
                         child: CustomImageView(
                           imagePath: ImageConstant.imgImage20,
                           height: 17,
@@ -254,9 +268,21 @@ class HomePage extends StatelessWidget {
                           horizontal: 5,
                           vertical: 8,
                         ),
-                        decoration: const BoxDecoration(
-                                color: Color(0XFFF6EFFE))
-                            .copyWith(borderRadius: BorderRadius.circular(6)),
+                        clipBehavior: Clip.none,
+                        decoration: BoxDecoration(
+                          //color: Color(0XFFF6EFFE),
+                          borderRadius: BorderRadiusStyle.roundedBorder6,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                            ),
+                            const BoxShadow(
+                              color: Color(0XFFF6EFFE),
+                              spreadRadius: -1,
+                              blurRadius: 1.0,
+                            ),
+                          ],
+                        ).copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
                           imagePath: ImageConstant.imgImage18,
                           height: 17,
@@ -274,9 +300,21 @@ class HomePage extends StatelessWidget {
                           horizontal: 12,
                           vertical: 8,
                         ),
-                        decoration: const BoxDecoration(
-                                color: Color(0XFFF6EFFE))
-                            .copyWith(borderRadius: BorderRadius.circular(6)),
+                        clipBehavior: Clip.none,
+                        decoration: BoxDecoration(
+                          //color: Color(0XFFF6EFFE),
+                          borderRadius: BorderRadiusStyle.roundedBorder6,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                            ),
+                            const BoxShadow(
+                              color: Color(0XFFF6EFFE),
+                              spreadRadius: -1,
+                              blurRadius: 1.0,
+                            ),
+                          ],
+                        ).copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
                           imagePath: ImageConstant.imgImage23,
                           height: 17,
@@ -294,9 +332,21 @@ class HomePage extends StatelessWidget {
                           horizontal: 12,
                           vertical: 8,
                         ),
-                        decoration: const BoxDecoration(
-                                color: Color(0XFFF6EFFE))
-                            .copyWith(borderRadius: BorderRadius.circular(6)),
+                        clipBehavior: Clip.none,
+                        decoration: BoxDecoration(
+                          //color: Color(0XFFF6EFFE),
+                          borderRadius: BorderRadiusStyle.roundedBorder6,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                            ),
+                            const BoxShadow(
+                              color: Color(0XFFF6EFFE),
+                              spreadRadius: -1,
+                              blurRadius: 1.0,
+                            ),
+                          ],
+                        ).copyWith(borderRadius: BorderRadius.circular(6)),
                         child: CustomImageView(
                           imagePath: ImageConstant.imgImage22,
                           height: 17,
